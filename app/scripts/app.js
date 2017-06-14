@@ -29,7 +29,8 @@
   app.cols = '2';
 
   // Firebase location -- do my own !!!
-  app.location = 'https://polymer-admin.firebaseio.com';
+  /*app.location = 'https://polymer-admin.firebaseio.com';*/
+  app.location = 'https://livechat-80cc9.firebaseapp.com/';
 
   // Sign out user
   app.signOut = function() {

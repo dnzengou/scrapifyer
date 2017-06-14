@@ -2,6 +2,12 @@
   <template>
     <style include="shared-styles"></style>
     <style>
+      :host::shadow .widget {
+        height: auto !important;  // todo: remove important
+        min-height: 460px;
+      }
+    </style>
+    <style>
       :host::shadow .google-feeds-wrapper {
         height: 280px;
         overflow-y: scroll;
@@ -30,12 +36,29 @@
       }
     </style>
 
+    <iframe src="" height="250" width="300" style="border:none;"></iframe>
+
+    <!--<iframe src="https://livechat-80cc9.firebaseapp.com/" height="250" width="300" style="border:none;"></iframe>
     <div class="google-feeds-wrapper">
       <google-feeds id="feeder"></google-feeds>
-    </div>
+    </div>-->
   </template>
 
   <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'pa-news',
+
+        /*ready: function() {
+          this.$.feeder.feeds = ['http://feeds.cnevids.com/brand/wired.mrss'];
+        }*/
+      });
+    })();
+  </script>
+
+  <!--<script>
     (function() {
       'use strict';
 
@@ -47,6 +70,6 @@
         }
       });
     })();
-  </script>
+  </script>-->
 
 </dom-module>

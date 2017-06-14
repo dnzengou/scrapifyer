@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "name": "Scrapifyer System Admin Template",
+  "launch_path": "/?homescreen=1",
+  "description": "Make Defects Low Again",
+  "developer": {
+    "name": "desireyavro",
+    "url": "http://desireyavro.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Scrapifyer System Admin Template",
+      "description": "Make Defects Low Again"
+    }
+  }
+}
