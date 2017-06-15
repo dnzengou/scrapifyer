@@ -1,15 +1,14 @@
-<dom-module id="pa-area-chart">
+<!--<dom-module id="pa-area-chart">
   <template>
     <style include="shared-styles"></style>
 
     <google-chart
         type='area'
-        options='{"title": "Days in a month"}'
-        cols='[{"label": "Month", "type": "string"},{"label": "Days", "type": "number"}]'
-        rows='[ ["Jan", 31],["Feb", 28],["Mar", 31],["Apr", 30],["May", 31],["Jun", 30] ]'>
+        options='{"title": "Rework timelaps"}'
+        cols='[{"label": "Days", "type": "string"},{"label": "Hours", "type": "number"}]'
+        rows='[ ["Wed", 31],["Thur", 28],["Fri", 31],["Mon", 30],["Tue", 31]'>
     </google-chart>
   </template>
-
   <script>
     (function() {
       'use strict';
@@ -19,5 +18,45 @@
       });
     })();
   </script>
+
+</dom-module>-->
+
+<dom-module id="pa-area-chart">
+  <template>
+    <style include="shared-styles"></style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['timeline']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var container = document.getElementById('timeline');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+
+        dataTable.addColumn({ type: 'string', id: 'PDCA' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+        dataTable.addRows([
+          [ 'Plan', new Date(2017, 4, 20), new Date(2017, 5, 3) ],
+          [ 'Do', new Date(2017, 5, 1),  new Date(2017, 6, 15) ],
+          [ 'Check',  new Date(2017, 6, 19),  new Date(2017, 7, 2) ],
+          [ 'Act', new Date(2017, 7, 29),  new Date(2017, 8, 10) ]]);
+
+        chart.draw(dataTable);
+      }
+    </script>
+
+    <div id="timeline" style="height: 250px;"></div>
+
+</template>
+<script>
+(function() {
+  'use strict';
+
+  Polymer({
+    is: 'pa-area-chart'
+  });
+})();
+</script>
 
 </dom-module>

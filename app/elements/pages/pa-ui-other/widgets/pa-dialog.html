@@ -53,29 +53,24 @@
     </style>
 
     <section on-click="clickHandler">
-      <h4>Dialog layouts</h4>
+      <h4>Plan Do Check Act</h4>
 
-      <paper-button raised data-dialog="dialog" class="orange">plain dialog</paper-button>
-      <paper-button raised data-dialog="scrolling" class="orange">scrolling dialog</paper-button>
-      <paper-button raised data-dialog="actions" class="orange">dialog with actions</paper-button>
-      <paper-button raised data-dialog="modal" class="orange">modal dialog</paper-button>
+      <paper-button raised data-dialog="dialog" class="orange">Plan</paper-button>
+      <paper-button raised data-dialog="scrolling" class="orange">Do</paper-button>
+      <paper-button raised data-dialog="actions" class="orange">Check</paper-button>
+      <paper-button raised data-dialog="modal" class="orange">Act</paper-button>
 
       <paper-dialog id="dialog">
-        <h2>Dialog Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Plan / Predict</h2>
+        <p>Start by defining the problem and pinpointing the root cause using the 5 Whys.
+          <br>  You may need to take a more in-depth approach (ex. <a href="https://en.wikipedia.org/wiki/Ishikawa_diagram">Cause-Effect Diagrams</a>) if the issue is overly complex.</p>
       </paper-dialog>
 
       <paper-dialog id="scrolling">
-        <h2>Scrolling</h2>
+        <h2>Do / "Test" phase</h2>
         <paper-dialog-scrollable>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Once that the problem is defined and the root cause found, it is time for brainstorming: list potential solutions.</p>
+          <p>When you have your options laid out, determine which one is to you the most practical. Test it out on a small scale, not fully.</p>
         </paper-dialog-scrollable>
         <div class="buttons">
           <paper-button dialog-dismiss>Cancel</paper-button>
@@ -84,8 +79,10 @@
       </paper-dialog>
 
       <paper-dialog id="actions">
-        <h2>Dialog Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Check / "Study" phase</h2>
+        <p>Assess the outcome of the pilot solution.
+          <br>If you realize there is room for improvement, make necessary changes and repeat the “do” and “check” phases until you feel you have reached a comprehensive solution.</br>
+          If everything's clear, let's move forward.</p>
         <div class="buttons">
           <paper-button >More Info...</paper-button>
           <paper-button dialog-dismiss>Decline</paper-button>
@@ -93,8 +90,10 @@
         </div>
       </paper-dialog>
 
-      <paper-dialog id="modal" modal>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <paper-dialog id="modal" modal>>
+        <h2>Act</h2>
+        <p> If you are solving an isolated issue, congratulations! You are finished.
+          <br>If you are striving for continuous improvement, you should repeat the cycle from Step One: Plan to find additional opportunities for improvement.</p>
         <div class="buttons">
           <paper-button dialog-confirm autofocus>Tap me to close</paper-button>
         </div>
@@ -103,27 +102,41 @@
     </section>
 
     <section on-click="clickHandler">
-      <h4>Custom styling</h4>
-      <paper-button raised data-dialog="colors" class="green">colors</paper-button>
-      <paper-button raised data-dialog="position" class="green">size &amp; position</paper-button>
+      <h4>Tools</h4>
+      <paper-button raised data-dialog="colors" class="blue">Ishikawa / Cause-Effect Diagram</paper-button>
+      <paper-button raised data-dialog="position" class="blue">5 Why's</paper-button>
+      <paper-button raised data-dialog="animated" class="blue">Pareto Diagram</paper-button>
+      <paper-button raised data-dialog="animated" class="blue">RCCA</paper-button>
 
       <paper-dialog id="colors" heading="Custom Colors" class="colored">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Ishikawa diagrams (also called fishbone diagrams, herringbone diagrams, cause-and-effect diagrams, or Fishikawa) are causal diagrams that show the causes of a specific event.</p>
       </paper-dialog>
 
       <paper-dialog id="position" heading="Custom Size &amp; Position" class="size-position">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Ex. Your customer received their order two weeks later than you promised.
+            <ol>
+              <li>Why? Production was delayed in China.</li>
+              <li>Why? The factory received the blits they needed two weeks later than anticipated.</li>
+              <li>Why? The blit supplier did not have the materials ready on time.</li>
+              <li>Why? They had trouble sourcing the steel needed to make the blits.<li>
+              <li>Why? Their sourcing manager is new and inexperienced.</li>
+            </ol>
+        </p>
       </paper-dialog>
+
+      <paper-dialog id="animated" entry-animation="scale-up-animation" exit-animation="fade-out-animation" with-backdrop>
+        <h2>Pareto</h2>
+        <p>A Pareto chart, named after Vilfredo Pareto, is a type of chart that contains both bars and a line graph, where individual values are represented in descending order by bars, and the cumulative total is represented by the line.</p>
+      </paper-dialog>
+
+      <paper-dialog id="animated" entry-animation="scale-up-animation" exit-animation="fade-out-animation" with-backdrop>
+        <h2>Root Cause and Corrective Action</h2>
+        <p>Root cause corrective action (RCCA) is a reactive problem solving process using the <a href="http://core.cypress.com/wp-content/uploads/2015/11/V2N2-quality-table.jpg">Eight Disciplines (8D)</a> methodology.
+          <br>properly done, RCCA helps us learn about new failure modes, create more robust products and processes and hopefully prevent future issues.</p>
+      </paper-dialog>
+
     </section>
 
-    <section on-click="clickHandler">
-      <h4>Transitions</h4>
-      <paper-button raised data-dialog="animated" class="blue">transitions</paper-button>
-      <paper-dialog id="animated" entry-animation="scale-up-animation" exit-animation="fade-out-animation" with-backdrop>
-        <h2>Dialog Title</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </paper-dialog>
-    </section>
   </template>
 
   <script>

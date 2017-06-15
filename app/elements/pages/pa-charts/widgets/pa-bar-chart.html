@@ -1,4 +1,4 @@
-<dom-module id="pa-bar-chart">
+<!--<dom-module id="pa-bar-chart">
   <template>
     <style include="shared-styles"></style>
 
@@ -8,6 +8,48 @@
         cols='[{"label": "Month", "type": "string"},{"label": "Days", "type": "number"}]'
         rows='[ ["Jan", 31],["Feb", 28],["Mar", 31],["Apr", 30],["May", 31],["Jun", 30] ]'>
     </google-chart>
+  </template>
+
+  <script>
+    (function() {
+      'use strict';
+
+      Polymer({
+        is: 'pa-bar-chart'
+      });
+    })();
+  </script>
+
+</dom-module>-->
+
+<dom-module id="pa-bar-chart">
+  <template>
+    <style include="shared-styles"></style>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['ID', 'closedCount', 'openedCount', 'DPU (%)'],
+          ['be9f59bf-c10b-4fd0-967d-f2c60988c9fc',   0,  0,      0],
+          ['be9f59bf-c10b-4fd0-967d-f2c60988c9fd',   0,  1,      6],
+          ['be9f59bf-c10b-4fd0-967d-f2c60988c9fe',   1,  2,      15],
+          ['be9f59bf-c10b-4fd0-967d-f2c60988c9ff',   3,  3,      13]
+        ]);
+
+        var options = {
+          colorAxis: {colors: ['yellow', 'red']}
+        };
+
+        var chart = new google.visualization.BubbleChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+    <div id="chart_div"  style="height: 250px;"></div>
+
   </template>
 
   <script>
