@@ -1,4 +1,6 @@
-# Polymer Admin Template
+## Scrapifyer System Admin template
+
+<!--# Polymer Admin Template
 
 Responsive admin dashboard created using Polymer 1.0 and [Polymer Starter Kit](https://github.com/PolymerElements/polymer-starter-kit).
 
@@ -65,4 +67,4 @@ We are eager to hear your feedback to make the template better.
 Enjoy!
 
 <!-- Made with ♥ by [Akveo team](http://akveo.com/). -->
-#scrapifyer ge hack demo
+#scrapifyer ge hack demo-->
