@@ -64,7 +64,6 @@ It's just a first version, but we will continue development of this template to 
 
 We are eager to hear your feedback to make the template better.
 
-Enjoy!
+Enjoy!-->
 
 <!-- Made with ♥ by [Akveo team](http://akveo.com/). -->
-#scrapifyer ge hack demo-->
